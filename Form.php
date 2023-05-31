@@ -238,7 +238,7 @@
                 </div>
 
                 <div class="wrap-nikah bg1 rs1-wrap-nikah">
-                    <span class="label-nikah ">Tempat</span>
+                    <span class="label-nikah ">Tempat Lahir</span>
                     <input disabled class="nikah KAU PM KTOT SIOT SKK" type="text" name="tempat-suami" placeholder="">
                 </div>
 
