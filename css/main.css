@@ -1,0 +1,473 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: Roboto-Italic;
+    src: url('../fonts/Roboto/Roboto-Italic.ttf');
+}
+
+
+/*---------------------------------------------*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Roboto-Regular, sans-serif;
+}
+
+
+/*---------------------------------------------*/
+
+a {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #ffffff;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/*---------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+p {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+}
+
+ul,
+li {
+    margin: 0px;
+    list-style-type: none;
+}
+
+
+/*---------------------------------------------*/
+
+input {
+    outline: none;
+    border: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+textarea {
+    outline: none;
+    border: none;
+}
+
+textarea:focus,
+input:focus {
+    border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+    color: transparent;
+}
+
+textarea:focus::-moz-placeholder {
+    color: transparent;
+}
+
+textarea:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+input::-webkit-input-placeholder {
+    color: #adadad;
+}
+
+input:-moz-placeholder {
+    color: #adadad;
+}
+
+input::-moz-placeholder {
+    color: #adadad;
+}
+
+input:-ms-input-placeholder {
+    color: #adadad;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #adadad;
+}
+
+textarea:-moz-placeholder {
+    color: #adadad;
+}
+
+textarea::-moz-placeholder {
+    color: #adadad;
+}
+
+textarea:-ms-input-placeholder {
+    color: #adadad;
+}
+
+
+/*---------------------------------------------*/
+
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+iframe {
+    border: none !important;
+}
+
+
+/*---------------------------------------------*/
+
+.container {
+    max-width: 1200px;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Utility ]*/
+
+.bg0 {
+    background-color: #fff;
+}
+
+.bg1 {
+    background-color: #f7f7f7;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Contact ]*/
+
+.form-container {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #ffffff;
+}
+
+.form-outer-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+.upper {
+    margin-top: 50px;
+}
+
+.downer {
+    margin-bottom: 50px;
+}
+
+.form-wrap {
+    width: 920px;
+    background: #97DA8C;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 62px 55px 90px 55px;
+    margin: 50px 50px;
+    box-shadow: 0 0 0 15px #00ad5f;
+}
+
+.form-outer-wrap {
+    width: 460px;
+    background: #4CC938;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+
+/*------------------------------------------------------------------
+[  ]*/
+
+.form {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-title {
+    display: block;
+    width: 100%;
+    font-family: Roboto-Bold;
+    font-size: 39px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 59px;
+}
+
+.form-outer-title {
+    display: block;
+    width: 100%;
+    font-family: Roboto-Bold;
+    font-size: 39px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/*------------------------------------------------------------------
+[  ]*/
+
+.wrap-nikah {
+    width: 100%;
+    position: relative;
+    border: 1px solid #e6e6e6;
+    border-radius: 13px;
+    padding: 10px 30px 9px 22px;
+    margin-bottom: 20px;
+}
+
+.rs1-wrap-nikah {
+    width: calc((100% - 40px) / 2);
+}
+
+.rs2-wrap-nikah {
+    width: calc((100% - 40px) / 3);
+}
+
+.label-nikah {
+    font-family: Roboto-Bold;
+    font-size: 10px;
+    color: #393939;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.nikah {
+    display: block;
+    width: 100%;
+    background: #555555;
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.2;
+    padding-right: 15px;
+}
+
+
+/*------------------------------------------------------------------
+[Result Form]*/
+
+.Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.Right {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    color: #000000;
+}
+
+.Left {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    color: #000000;
+}
+
+
+/*------------------------------------------------------------------
+[Form Tabs]*/
+
+.tab {
+    display: none;
+}
+
+
+/*---------------------------------------------*/
+
+input.nikah {
+    height: 40px;
+}
+
+textarea.nikah {
+    min-height: 120px;
+    padding-top: 9px;
+    padding-bottom: 13px;
+}
+
+.nikah:focus+.focus-nikah::before {
+    width: 100%;
+}
+
+.has-val.nikah+.focus-nikah::before {
+    width: 100%;
+}
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+
+.container-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    border-radius: 25px;
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.form-btn i {
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.form-btn:hover {
+    background-color: #00ad5f;
+}
+
+.form-btn:hover i {
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px);
+}
+
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 768px) {
+    .rs1-wrap-nikah {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .wrap {
+        padding: 62px 15px 90px 15px;
+    }
+    .wrap-nikah {
+        padding: 10px 10px 9px 10px;
+    }
+}
