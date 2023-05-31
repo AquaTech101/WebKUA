@@ -32,7 +32,7 @@
     <div class="form-container">
         <form id="form" action="<?php echo $_POST["selectedOps"]; ?>.php" method="POST" class="form-wrap">
             <input type="hidden" name="tipe" id="tipe" value="">
-            <div class="form tab">
+            <!-- <div class="form tab">
                 <span id="G-SKUN" class="form-title">
                 Informasi Anak
                 </span>
@@ -109,9 +109,9 @@
 						</span>
 					</button>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="form tab">
+            <!-- <div class="form tab">
                 <span id="G-KAU" class="form-title">
                 Informasi Ayah
                 </span>
@@ -164,9 +164,9 @@
 						</span>
 					</button>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="form tab">
+            <!-- <div class="form tab">
                 <span class="form-title">
                 Informasi Ibu
                 </span>
@@ -219,7 +219,7 @@
 						</span>
 					</button>
                 </div>
-            </div>
+            </div> -->
 
             <div class="form tab">
 
@@ -262,25 +262,21 @@
                     <input disabled class="nikah KAU PM KTOT SIOT SKK" type="text" name="pekerjaan-suami" placeholder="">
                 </div>
 
-                <div class="wrap-nikah bg1 rs1-wrap-nikah">
-                    <span id="4G-SKK" class="label-nikah">Bin</span>
-                    <input disabled class="nikah PM SKK" type="text" name="bin-suami" placeholder="">
+                <div class="wrap-nikah bg1">
+                    <span class="label-nikah">Bin</span>
+                    <input disabled class="nikah KAU PM KTOT SIOT SKK" type="text" name="pekerjaan-suami" placeholder="">
                 </div>
+
                 
-                <div class="wrap-nikah bg1 rs1-wrap-nikah">
-                    <span class="label-nikah">Tanggal Meninggal</span>
-                    <input disabled class="nikah SKK" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  name="ninggal-suami">
-                </div>
+                
+                
 
                 <div class="wrap-nikah bg0">
                     <span class="label-nikah">Tempat Tinggal</span>
                     <textarea disabled class="nikah KAU PM KTOT SIOT SKK" name="tinggal-suami" placeholder=""></textarea>
                 </div>
 
-                <div class="wrap-nikah bg0">
-                    <span class="label-nikah">Tempat Wafat</span>
-                    <textarea disabled class="nikah SKK" name="wafat-suami" placeholder=""></textarea>
-                </div>
+                
 
                 <div class="container-form-btn submit">
                     <button class="form-btn">
