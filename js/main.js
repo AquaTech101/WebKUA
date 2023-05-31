@@ -45,7 +45,7 @@ function selectedOption() {
             z[i].style.background = "transparent";
         }
 
-    } else if (y == "PM") {
+    } else if (y == "Form Persetujuan Mempelai") {
         document.getElementById("tipe").value = "Surat Persetujuan Mempelai"
         z = document.getElementsByClassName("PM");
         for (i = 0; i < 18; i++) {

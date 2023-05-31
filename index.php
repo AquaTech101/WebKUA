@@ -64,7 +64,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <div class="wrap-nikah nikah-select bg1">
               <span class="label-nikah">Jenis Surat</span>
               <div>
-                <input type="hidden" name="selectedOps" value="PM">
+                <input type="hidden" name="selectedOps" value="Form Persetujuan Mempelai">
                 <span class="form-control">Persetujuan Mempelai</span>
               </div>
             </div>

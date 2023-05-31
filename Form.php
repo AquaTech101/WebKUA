@@ -17,7 +17,7 @@
         <button class="btn" id="before" onclick="nextPrev(-1)"><i class="fas fa-chevron-left m-l-7" style="font-size:32px"></i></button>
         <div class="form-outer-wrap">
             <span name="top" style="margin-top: 0%;" class="form-outer-title">
-            Pengisian Form Surat Online
+            <!-- Pengisian Form Persetujuan Mempelai -->
             </span>
             <span name="top" id="name" style="margin-top: 0%;" class="form-outer-title">
             <?php echo $_POST["selectedOps"]; ?>
@@ -164,9 +164,9 @@
 						</span>
 					</button>
                 </div>
-            </div> -->
+            </div>
 
-            <!-- <div class="form tab">
+            <div class="form tab">
                 <span class="form-title">
                 Informasi Ibu
                 </span>
@@ -263,13 +263,11 @@
                 </div>
 
                 <div class="wrap-nikah bg1">
-                    <span class="label-nikah">Bin</span>
-                    <input disabled class="nikah KAU PM KTOT SIOT SKK" type="text" name="pekerjaan-suami" placeholder="">
+                    <span id="4G-SKK" class="label-nikah">Bin</span>
+                    <input disabled class="nikah PM SKK" type="text" name="bin-suami" placeholder="">
                 </div>
-
                 
-                
-                
+               
 
                 <div class="wrap-nikah bg0">
                     <span class="label-nikah">Tempat Tinggal</span>
@@ -329,7 +327,7 @@
                     <input disabled class="nikah KAU PM KTOT SIOT SKK" type="text" name="pekerjaan-istri" placeholder="">
                 </div>
 
-                <div class="wrap-nikah bg1 rs1-wrap-nikah">
+                <div class="wrap-nikah bg1">
                     <span id="3G-SKK" class="label-nikah">Binti</span>
                     <input disabled class="nikah PM SKK" type="text" name="binti-istri" placeholder="">
                 </div>
