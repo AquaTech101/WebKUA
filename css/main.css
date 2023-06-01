@@ -346,6 +346,7 @@ iframe {
 [Result Form]*/
 
 .Center {
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -353,17 +354,21 @@ iframe {
 }
 
 .Right {
+    text-align: right;
     display: flex;
     justify-content: right;
     align-items: right;
     color: #000000;
+    padding-right: 15px;
 }
 
 .Left {
+    text-align: left;
     display: flex;
     justify-content: left;
     align-items: left;
     color: #000000;
+    padding-left: 15px;
 }
 
 

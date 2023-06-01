@@ -1,3 +1,22 @@
+<?php
+// Initialize the session
+session_start();
+
+$accepted = array("tipe", "nama-suami", "alias-suami", "bin-suami", "tempat-suami", "tanggal-suami", "warga-suami", "agama-suami", "pekerjaan-suami", "tinggal-suami", "nama-istri", "alias-istri", "binti-istri", "tempat-istri", "tanggal-istri", "warga-istri", "agama-istri", "pekerjaan-istri", "tinggal-istri");
+
+foreach ( $_POST as $foo=>$bar ) {
+    if ( in_array( $foo, $accepted )) {
+        if (!empty($bar)) {
+            $_SESSION[$foo] = $bar;
+        }
+        else {
+            $_SESSION[$foo] = '';
+        }
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,7 +67,7 @@
 
                 <strong class="Left">
                     Menyatakan dengan sesungguhnya bahwa atas dasar suka rela, dengan kesadaran sendiri, tanpa
-                    paksaaan dari siapapun juga, setuju untuk melangsungkan pernikahan.
+                    paksaaan dari siapapun juga, setuju untuk melangsungkan pernikahan. <?php echo $_SESSION['tinggal-istri']; ?>
                 </strong><br>
 
                 <strong class="Left">
@@ -57,7 +76,18 @@
             </div>
 
             <div class="container-form-btn">
-                <a class="form-btn" id="select-form" href="index.html">
+                <a class="form-btn" id="select-form" href="downloadpdf.php">
+                    <button class="form-btn">
+						<span>
+							Download in pdf
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+                    </button>
+                </a>
+            </div>
+
+            <div class="container-form-btn">
+                <a class="form-btn" id="select-form" href="index.php">
                     <button class="form-btn">
 						<span>
                             <i class="fa fa-long-arrow-left m-r-7" aria-hidden="true"></i>

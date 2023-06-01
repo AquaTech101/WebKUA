@@ -1,0 +1,15 @@
+{
+    "roboto": {
+        "bold_italic": "C:\\xampp\\htdocs\\Tugasku\\IMK\\WebsiteKUA\\vendor\\dompdf\\dompdf\/lib\/fonts\/roboto_bold_italic_76e4a6bfadf19fea9990a367967a3f96",
+        "300": "roboto_300_32acfcb296f555e063ebba2be7db9e2f"
+    },
+    "roboto-regular": {
+        "normal": "roboto_regular_normal_10e36696a3603b72178c01e4a10caa6f"
+    },
+    "roboto-bold": {
+        "normal": "roboto_bold_normal_1f30dca3456b31c3576511b9575862ce"
+    },
+    "roboto-italic": {
+        "normal": "roboto_italic_normal_8bf465205e6cc644c47bc3b67621b3f3"
+    }
+}

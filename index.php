@@ -7,6 +7,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
+
+$accepted = array("tipe", "nama-suami", "alias-suami", "tempat-suami", "tanggal-suami", "warga-suami", "agama-suami", "pekerjaan-suami", "tinggal-suami", "nama-istri", "alias-istri", "binti-istri", "tempat-istri", "tanggal-istri", "warga-istri", "agama-istri", "pekerjaan-istri", "tinggal-istri");
+
+foreach ( $_SESSION as $foo=>$bar ) {
+    if ( in_array( $foo, $accepted ) && !empty($bar) ) {
+      unset($_SESSION[$foo]);
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -38,28 +46,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         Pengisian Form Surat KUA Online
     </span>
     <div class="form-container">
-        <!-- <form id="wrap" action="Form.php" method="POST" class="form-wrap">
-            <div class="wrap-nikah nikah-select bg1">
-                <span class="label-nikah">Jenis Surat</span>
-                <div>
-                    <select id="selected" onchange="special()" name="selectedOps" class="form-control">
-                            
-                            <option selected value="PM">Persetujuan Mempelai</option>
-                           
-						</select>
-                </div>
-            </div>
-
-            <div class="container-form-btn">
-                <button class="form-btn">
-						<span>
-							Submit
-							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-						</span>
-                    </button>
-            </div>
-        </form> -->
-
         <form id="wrap" action="Form.php" method="POST" class="form-wrap">
             <div class="wrap-nikah nikah-select bg1">
               <span class="label-nikah">Jenis Surat</span>
